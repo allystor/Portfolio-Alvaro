@@ -1,0 +1,56 @@
+/*navbar*/
+.navbar{
+    background-color: rgba(60, 80, 247, 1);
+}
+.container-nav, a{
+
+    padding: 30px;
+    background-color: rgba(60, 80, 247, 1);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+#navbarSupportedContent {
+    justify-content: end;
+}
+/*main*/
+.container-main{
+    background-color: rgba(60, 80, 247, 1);
+}
+.image {
+    display: inline-block;
+    position: relative;
+    justify-content: end;
+    padding: 50px;
+}
+.image img{
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+}
+.image .texto{
+    position: absolute;
+    top: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 6.5rem;
+    font-weight: 1000;
+}
+.image .texto::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
