@@ -1,3 +1,7 @@
+body {
+    padding: 0;
+    margin: 0;
+}
 /*navbar*/
 .navbar{
     background-color: rgba(60, 80, 247, 1);
@@ -12,25 +16,23 @@
 #navbarSupportedContent {
     justify-content: end;
 }
+.navbar-brand{
+    width: 50%;
+}
+.navbar-brand img {
+    width: 70%;
+}
 /*main*/
 .container-main{
     background-color: rgba(60, 80, 247, 1);
 }
-.image {
-    background-image: url(/static/img/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    justify-content: end;
-    padding: 50px;
-}
+
 #Start h2{
     position: absolute;
     top: 180px;
     color: #fff;
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     font-weight: 1000;
 }
 #Start h2::after {
@@ -50,14 +52,19 @@
         opacity: 1;
     }
 }
-/*Main(ConteÃšdo)*/
+/*Main(Conteudo)*/
 
-#Start{
-    background-image: url(/static/img/main.jpg);
+
+ul li {
+    list-style: none;
+}
+
+#Start h2{
+    background-image: url(/src/static/img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; 
     width: 100%;
     height: 100vh;
 }
@@ -155,7 +162,10 @@ i.list-mobile {
         display:flex
     }
     #Start h1 h2{
-        font-size: 3.5rem;
+        font-size: 1.8rem;
+    }
+    #Start h2 {
+        font-size: 1.8rem;
     }
     #Start span #subtitle {
         margin-right: 0;
@@ -163,6 +173,19 @@ i.list-mobile {
     }
     #main {
         margin-left: 0;
+    }
+    #Contact img {
+        width: 50%;
+    }
+    nav {
+        align-items: center;
+    }
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img {
+        width: 70%;
+    
     }
 }
 /*Scrollbar*/
