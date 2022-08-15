@@ -166,6 +166,7 @@ i.list-mobile {
     }
     #Start h2 {
         font-size: 1.8rem;
+        align-items: center;
     }
     #Start span #subtitle {
         margin-right: 0;
@@ -185,7 +186,13 @@ i.list-mobile {
     }
     .navbar-brand img {
         width: 70%;
-    
+    }
+    .card {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .social-item img {
+        width: 10%;
     }
 }
 /*Scrollbar*/
