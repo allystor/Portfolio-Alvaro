@@ -8,5 +8,5 @@ function typeWriter(elemento) {
     })
 }
 
-const texto = document.querySelector('.texto');
+const texto = document.querySelector('.animation-text');
 typeWriter(texto);

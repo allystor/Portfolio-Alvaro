@@ -14,35 +14,232 @@
     <title>Portfolio - Álvaro Veiga</title>
 </head>
 <body>
-    <div class="container nav-bar">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Álvaro Veiga</a>
+    <div class="container-navbar">
+        <nav class=" fixed-top navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="/static/img/alvaro_veiga_4.png" alt="" srcset="" class="w-25 p-0"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#About">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#Skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#Projects">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Formations">Formações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contato</a>
                     </li>
                 </ul>
         </nav>
     </div>
-    <main class="container main">
-        <div class="image">
-            <img src="{% static 'img/main.jpg'%}" alt="profile">
-            <p class="texto">Hello visitor, I'm Álvaro Veiga, a web developer and a student of the University of Vassouras.</p>
-        </div>
-    </div>
+    <main id="main">
+        <section id="Start" class="row m-0 p-0">
+            <div class="d-flex text-center justify-content-center aling-items-center flex-column">
+                <h2 class="animation-text" class="text-white text-shadow">Olá vistante, bem vindo ao meu portifólio!</h2>
+            </div>
+        </section>
+        <section id="About" class="container mt-5">
+            <div class="row w-100">
+                <div class="cow md-12">
+                    <h2 class="pt-3">Sobre</h2>
+                    <p>Acredito que as tecnologias que utilizamos hoje podem mudar os   futuros das próximas gerações de forma com que todos possamos fazer do mundo um lugar melhor. Sou um amante dessa área e estou sempres buscando conhecimento ampliado neste ramo.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img class="img-fluid shadow" src="/static/img/profile.jpg" alt="Foto de perfil">
+                </div>
+                <div class="col-md-8">
+                    <h3>Estudante de engenharia de software</h3>
+                    <p>Atualmente estou cursando engenharia de software faço estágio numa empresa com parceira da minha instituição DMS logistics e estou adquirindo bastante conhecimento em programação e desenvolvimento Web tanto front-end quanto back-end. As linguagens de programação que eu mais possuo conhecimento são Python e Javascript. Também utilizo constantemente as ferramentas básica de desenvolvimento web como o HTML5 e CSS3. E como frameworks que utilizo para deixar meus projetos mais dinâmicos são Flask, Django e Bootstrap. Além de bancos de dados relacionais como o PostgreSQL e o MySQL utilizando também a plataforma de serviço Docker.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-5 fw-bold">
+                                <li class="list-group-item">
+                                    Seu nome: <span class="fw-lighter">Álvaro João da Silva Veiga</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Sua idade é: <span class="fw-lighter">20 anos</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Mora no estado do: <span class="fw-lighter">Rio de Janeiro</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Na cidade de: <span class="fw-lighter">Vassouras</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills" class="mt-5 skills">
+            <div class="container pb-5">
+                <h2 class="pt-5">Habilidades</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Python</h4>
+                                <ul>
+                                    <li>Programas de automoção.</li>
+                                    <li>Organização e armazenamento informações de páginas na internet.</li>
+                                    <li>Aplicações de interações web com o framework flask e django.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="card-img-top">
+                            <div class="card-body">
+                                <h4>JavaScript</h4>
+                              <ul>
+                                  <li>Execução de ações, animações e processamento em páginas HTML.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0 mb-5" style="width: 18rem;">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="card-img-top" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="card-img-top"/>
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML e CSS</h4>
+                              <ul>
+                                  <li>Utilização da semântica para construir páginas bem elaboradas e para facilitar o compreendimento do código. </li>
+                                  <li>Inserção do framework bootstrap para rapida estilização das páginas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">
+                            <div class="d-flex justify-content-center">                    
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                            </div>
+                            <div class="card-body">
+                                <h4>MySQL</h4>
+                              <ul>
+                                  <li>Utilização da semântica para construir páginas bem elaboradas e para facilitar o compreendimento do código. </li>
+                                  <li>Inserção do framework bootstrap para rapida estilização das páginas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">
+                            <div class="d-flex justify-content-center">                    
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                            </div>
+                            <div class="card-body">
+                                <h4>PostgreSQL</h4>
+                              <ul>
+                                  <li>Utilização da semântica para construir páginas bem elaboradas e para facilitar o compreendimento do código. </li>
+                                  <li>Inserção do framework bootstrap para rapida estilização das páginas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">
+                            <div class="d-flex justify-content-center">   
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+                            </div>
+                            <div class="card-body">
+                                <h4>Docker</h4>
+                              <ul>
+                                  <li>Utilização da semântica para construir páginas bem elaboradas e para facilitar o compreendimento do código. </li>
+                                  <li>Inserção do framework bootstrap para rapida estilização das páginas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="Projects" class="mt-5 skills">
+            <div class="container pb-5">
+                <h2 class="pt-5">Projetos</h2>
+                <div class="d-flex justify-content-around">
+                    <div class="col-md-4">
+                        <div class="card p-5 shadow border-0" style="width: 18rem;">          
+                            <img src="/static/img/cantina-UV.png" />
+                            <div class="card-body">
+                                <h4>Cantina-UV</h4>
+                              <ul>
+                                  <li>Trata-se de um projeto acadêmico </li>
+                                  <li>Inserção do framework bootstrap para rapida estilização das páginas.</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Formations" class="mt-5 mb-5 f-tile">
+            <div class="container pb-5">
+                <h2 class="pt-3 pb-4">Formações</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="f-item">
+                            <h4>Engenharia de software</h4>
+                            <h5>2021-2024</h5>
+                            <p><em>Universidade de Vassouras</em></p>
+                            <p>Curso de graduação voltado para a utilização de teorias, técnicas e ferramentas da Ciência da Computação para produção e desenvolvimento de softwares que por meio da programação e análise de sistemas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="f-item">
+                            <h4>Técnicas de informática</h4>
+                            <h5>2013-2014</h5>
+                            <p><em>Rede graal</em></p>
+                            <p>Curso este voltado como objetivo de formar o profissional que desempenha atividades ligadas a montagem e manutenção de microcomputadores, instalação e configuração de redes,desenvolvimento com ferramentas de sistemas operacionais e websites.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="f-item">
+                            <h4>Aprendizagem em técnicas de vendas</h4>
+                            <h5>2021-2022</h5>
+                            <p><em>Senac Resende</em></p>
+                            <p>Realiza a prospecção de clientes e negociação, identifica potenciais de negócios e acompanha a elaboração de propostas comerciais e varejistas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="pt-5 pb-5">
+            <div class="container mb-5 justify-content-center">
+                <h2 class='pt-3 pb-3'>Contato</h2>
+                <div class="itens d-flex justify-content-around">
+                    <div class="social-item d-flex flex-column">
+                        <a href = "mailto:alvarojoao17@gmail.com" target="_blank" ><img src="data:image/png;base64,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"></a>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="social-item d-flex flex-column">
+                        <a href="https://www.instagram.com/alvaro.veigones/" target="_blank" style="margin-left: 17px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAARFklEQVR4nO2de1BUV57Hv+feBkQWVHwEUWZDMOCLGLsvNkGTIWOM2V1iSomgMbZmZzWPrSUBfExqa0xtJamxEuXlZGorrg8kxp5oknHG1RnLKEHD0nS3BIkvWjETlR5Dgjx8lLf73rN/NDI8+jbdfU8/kvipssB7zv39TvePe+45v/M7v0MQ5phMptGEkDRCyGRCSCqANAAJAGJ6/o3q+QkANwFc7/l5E4AdQDOltJlSeo5Sel6v138f/E/hPSTUDRhIfX19Asdxj1JKnyCEzAOQzFiFHcAJQsgRQshftFrtXxnLV0VYGMRqtU6hlBoA5AJ4MMjqmyml+wghVYIgnAuy7kGEzCAWi2UMgOcopcsJIUKo2jGAegAfANgjCMJ3oWhA0A1isVh+BqAYwL8BGB5s/V5yh1JaSSl9a9asWZeDqThoBjGZTMk8z78GYDWAYcHSqxIHIcQoy/LbGRkZ54OhMOAGaWxsjHE4HL+G66nQBFpfgHAC+J3T6fx1ZmZmVyAVBdQgVqv1aUrp7wBMDKSeIGKnlP5KEIQqQggNhIKAGKSne9oG4PFAyA81lNLPeJ7/ZSCGzMwNYjabnyGE7IBrwvZjphPAKkEQ9rIUyswgFoslAsCbANaxlBvmUABboqOj106bNk1kIZDJF2exWMZTSv8YRvOJYGNyOp3PZGZmXlMrSLVBet4Xf0HwZ9jhxiWe5+fPnDnTpkaIKoNYLJZ0AH8GkKhGzo+Ia5TSf8rIyGjwVwDn74319fU/B3AC94zRl/sIIdVWq/VRfwX49YRYrdaHKKWfAxjpr+IfOV0AHhcE4aSvN/psEIvFkgLXk5Hg670/MdokSZqj1+ubfbnJpy6rsbFxHIBDuGcMbxjL8/yh+vp6n74rrw1is9miRFH8X9wbTfnCAxzH/eH06dOR3t7gtUE6Ozvf/QnPM9Sgv3379m+8rezVO8RqteZQSv/obf17DIICWCQIwh+GqjjkF9yzoNQAIJ5BwwZx4cIF1NfX4+zZs7h69So6OzvhdDoDoWoQGo0GI0aMwMSJEzF58mTo9XqkpKQESt11SZJ0er3+kqdKHg1CKSVWq/UzMPbaiqKI/fv3Y+/evWhpaWEpWjUpKSlYtmwZcnJywHF+T9PcQgg5otPp5nms46nQarUuo5R+wLJRR48exaZNm/Dtt9+yFMuclJQUFBQUYPbs2UzlEkKW6HS63yuWKxXU1dXFaTSas2A0E5dlGe+99x4qKytZiAsaixYtwvr168HzPCuRfwMwWRCETneFis+kRqN5C4yMcfPmTbz66qs/OGMAwCeffILCwkLcvHmTlcgEQsgbSoVun5CGhoYHJUk6C0D1n4UsyygqKsKJEyfUigopmZmZqKioYPVeccL1lFwcWOA26ECW5V+BgTEAoLS01CtjxMbGIj09HWPHjsXIkcFxkXV0dKCtrQ2nTp3CjRs3PNatq6tDeXk5CgsLWajWAFgPVwROPwY9IfX19Ukcx10A4PXsUomjR49i3bp1HutMnToVq1evRmZmJjSa0ASlOBwO1NXVYevWrThz5ozHuiUlJXjssceYqOU47sGB6/KDDGI2m39LCPl3tdpEUcTChQtx7Zr7RTSe51FUVIS8vDwQEh7zTUopjEYjysrKIEmS2zrjx4/Hxx9/jMhI1X+vAFAhCMKrfS/06xBPnjw5lhDyryw07d+/36MxSkpKkJ+fH3JjUEpx+fJlfP3116CUYunSpdi8ebPiqMput+PAgQOs1K8ymUyj+17oZxBZlpcCiGahae9e5WCMoqIi5uN7f7Db7VixYgUWLlyIZ599FkuXLsWlS5cwZ84cvPbaa4r3efpsPhKt0WiW9L3QzyCU0uUstFy4cEFxBj516lTk5eWxUKOaDRs29HtnXLx4EevXr4csy1iyZAmmTJni9j6bzcbMwzDwO+81iNVqncLKm1tfX69Ytnr1aubdlCzLkGXZp3s6OjrQ0DB46bulpQXffPMNCCFYtWqV4v0mk8nndiqgN5vNaXf/0zus6dmfwYRz59xvs4iNjYVer1clu6OjA9XV1bBYLGhubsaVK1cgiq6QqMjISEycOBFpaWkQBAHZ2dkYMWKEWzk8z4MQAkoHR4TefX888sgjiImJcTspVPqM/kAIWQZgA9B/HpLLSsHly+4j+NPT0xEREeGXTJvNhh07duDYsWNwOBxu64iiiJaWFrS0tODQoUPYuHEj5s2bh5dffhnjx4/vVzc2NhZZWVn44osv+l2fPn06Jk50hSJHRERgxowZqK2tHaRL6TP6ybPoMQgHAF9++eUEMFwJ7O7udnt93LhxPsu6desWNm7ciGXLluHw4cOKxnCHw+HAwYMHkZubi9LSUty+fbtf+RtvvIHZs2f3dqE6nQ4bN27s16WOHTvWrWylz+gnU3ps4HpCHA7HXJb9+t0uZCCxsbE+ybHb7SgqKoLNpir2DKIoYvfu3TCbzSgpKUFCgmuZOz4+HuXl5eju7oYsy267t7i4OLcy79y5o6pNA5EkKRvAbg4ACCFBiVL3xeinT5/GihUrVBujL83NzTAYDINm47GxsYrvmmDNkyiljwN/H2X9IihavcRut6OwsBDt7e3MZbe3t6OgoABXr15lLlslvwAATc/my5+FuDG93Lp1C8XFxUMag+d5aLVapKenY/Ro12T3+++/R1NTE06ePKno+gBcI7W1a9di27ZtiI5mMg9mQXJtbW28hlKaFmr3RV/Ky8vR3KwcWxYVFYX8/HwYDAZFr3BHRwd27doFo9Go+D5rbm7Gli1bhnR+BpOoqKhUDq7MCGGBzWbDp59+qlg+YcIEVFVVoaCgwKOLfuTIkSgoKEBVVRUSE5XX2Pbt24eLFwctSYQMSmkax3Fc2Bhkx44dijPuCRMmYOfOnXjggQe8lpeSkoKdO3cqGkWWZWzfvt2vtgaINI5SmhrqVgCububYsWNuy6KiolBaWopRo3zfJRcfH4+SkhJFd/nRo0fR2el2eTvoUErTOIRJnG51dbXipC8/P9+nJ2MgkyZNQn5+vtsyh8OBzz//3G/ZLCGE3McB+IdQNwQALBaL2+s8z8NgUO9mMxgMimscZrNZtXxGxHIAfJs+BwilkZVOp2Oyxj5q1Cg8/PDDbstYTj5VEj4GUZqoTZ8+nZmO9PR0n3SHgNiw6LKcTqeib2jMmDHM9Cg5Cm/fvh20eOIhiGUbvBrmuFv7CDc4AJ4DkoKARqNBVFSU27K2tjZmer77zn0KrOjo6JCFIA2gmwPA1LHvLxMmTHB7/auvvmKm49SpUz7pDgHhY5C0NPcOg5MnT6Kjo0O1/Pb2djQ2NrotS00Ni7kx0GOQkHdZACAI7uMrJEnCrl27VMuvrKxU9AAr6Q4B3Rxc4fEhJzs7W3G93Wg0qnIC2mw2xViqyMhIZGdn+y2bJZTSaxyAoKSuG4oRI0bgySefdFsmiqLfC1bt7e0oLi5WdMPPnTtXcZk2BJzjCCFhYRAAePHFFxWdgK2trVi5cqVPT4rNZsPKlSvR2trqtpzjOLzwwgt+tTVAnOckSQobgyQmJmLx4sWK5a2trVi+fDnKy8tx/fp1xXrt7e0oLS3FihUrFI0BAHl5eaqclqwhhJzXOJ3Oc4wiuZnw0ksvwWw2K/q2RFFEVVUVdu/eDa1Wi+nTp/fOwNva2tDU1ISGhoYhIxmTk5PxyiuvMG+/GkRRtGmysrLaLRbLXwH8Y6gbBLgmaSUlJTAYDB7fGbIsw2KxKHqJPREXF4d33nkHw4eHVdrgS1lZWe13XSfuV4ZCREJCAsrKyhAfz35rfFxcHCoqKpCczDqlvGo+A3rCgCilQTGIL76kqVOnYteuXUwnbcnJydi+fbtPHuQg+r+OAT0G4Xn+CEvJSu8kX8MvExISsG3bNuTl5anabMlxHJYsWYLKykrcf//9Pt3b1eU+b7KS781PKPoaRKvVtoLhfEQpZNSfZAHR0dFYt24d9uzZg/nz5/sUrB0ZGYmnnnoKRqMRa9as8eudodRmX8Nih+CsIAh2oH/0+ycAXmchPSkpCU1NTYOunzp1Cg6Hw68I+JSUFLz99tvo6upCdXU1zGYzbDYbLl++3LuWEhUVhaSkJKSmpvZuR1Az6RNFUdEhmZSU5LdcN+y7+0uvQSRJ2snzPBODTJ48GQcPHhx0/caNG6irq8Ojj/qdkhBxcXFYsGABFixY0Hvt7hCXdW6Suro6xYQBSrur/IFS+uHd33s/gV6vbyaEMFnt97QpZ+vWrcxflBzHMTeGLMt4//33FctnzZrFRA+l9P/6nrwwcI9hFQslKSkpmDRpktuyM2fOwGg0slATUIxGo+IuqdTUVGYzfEJIv+984J/VHgC3wYDnnntOsaysrCysU20cP34c5eXliuWe3Ds+ckuSpI/6XuhnkJ5jfv6HhaacnBzFZGCSJKG4uBh79uwJq3VuWZbx4YcfYs2aNYprJ4mJicjJyWGij1L6/sBT4wZ1vE6n8x0AqhPLcxyHgoICxXJJkrB582YYDAbU1NT4tFWNNaIooqamBgaDASUlJR63Mqxdu9bvfZIDuBMREbFp4EW3+xAsFstWuM6IUk1paSl27949ZL2YmBjMmDEDY8aM8SuG1x+uX7/em3zGm/RLubm5eP11JgNRAPhvQRBeHnhRySApAM6BwRFFsiyjuLgYx48fVysqpOh0OmzZsoVVjhOHJElp7vIvuh0rCoJwkVL6WxaaOY7DW2+9haysLBbiQoIgCB4j6P2gXCkZpuLg/c6dOxsAMImxjImJQVlZGZ5//nkW4oJKbm4uKioqEBMTM3Rl77A7nc43lQo97mUzm81LCCF7WLUEAGpqavDuu+/CbrezFMucxMRErF27VpVXwR2U0sUZGRn7lMqH3FxoNpuPEELmsmyUKIo4cOAAPvroI1y4cIGlaNWkpqZi8eLFyMnJYTWa6sthQRDme6owpEF6Msw1ABg9VF1/aGlpgclkwtmzZ3HlyhV0dXUFbQgcERGBuLg4JCUlYcqUKdDr9YFcuLrO87x25syZX3uqdC/VeHCglNKFGRkZ+4eq6JVHTqfTHaCUKvsS7uERSukmb4wB+HA6wvDhw9cDYJYk6qcCIaSWEPKf3tb32iDTpk0TOY57GmES6fgD4aLD4VgkCILXL0WfFhG0Wm0bpfSfAYT3mDU8sEuSNM/Xsw39ekn3HJdXg3uHginRRSnN9uf4PL+W2QRBaOI47hm4zoO9R386AfyLv2cZ+r3uqdVqayilc8DIvfIj4W+yLGcLguD36huro1f/DCBstiGFiBZCyHydTqfK9aA6MkCv119yOp2P4Sc8JCaE1HIcl6nWGAADgwBAZmbmte7u7jmU0v8C4FsC3R82FEDFsGHDHtdqtUy2CzN3hVit1qcppTsRoEPEwohOSukvMzIyPmYplHniAJ1O9yeO47SEEKbxwmHGYVmW01kbAwiws7DnaXkPANO4yxDSSil9PSMjQ/22YAUCmlpDp9P9yel0TieElMJ1zM8PFQeAzdHR0WmBNAYQRHd6Q0PD/ZIkFcJ1zM+wYOlViUgI+T3HcW/OnDkzKDmcgr6+UVdXd59GoykE8B8AwmpPWR/uUEorJUl6MzMz80owFYdswclkMo3WaDRLes7PUHdkAjvqAFSJomjMyspin8XZC8JiBdBkMqXyPL8crhMa2MX5e8cZAPt4nv8gWN2SJ8LCIH1pbGwc53A4fk4pfYIQ8gQA1hvJ7QBOEEKOSJJ0aNasWUzPnVBL2BlkILW1tfFRUVGpACZTStMopakcxyVQSmPgSk84En/PincDQAdcGY5uUEqv9WSqOE8IOR8REXH+oYceUs44EAb8P+TRO6il2pamAAAAAElFTkSuQmCC"></a>
+                        <label for="">Instagram</label>
+                    </div>
+                    <div class="social-item d-flex flex-column">
+                        <a href="https://www.linkedin.com/in/álvaro-joão-da-silva-veiga/" target="_blank" ><img src="data:image/png;base64,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"></a>
+                        <label for="">Linkedin</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
 </body>
