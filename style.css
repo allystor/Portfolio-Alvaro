@@ -93,7 +93,7 @@ i.list-mobile {
     width: 45px;
     height: 45px;
 }
-/*Formations(formaÃ§Ãĩes)*/
+/*Formations(formações)*/
 #Formations .f-title{
     font-weight:700;
     margin-top: 20px;
@@ -176,7 +176,7 @@ i.list-mobile {
         width: 50%;
     }
     .navbar-brand img {
-        width: 70%;
+        width: 100%;
     }
     .card {
         display: flex;
